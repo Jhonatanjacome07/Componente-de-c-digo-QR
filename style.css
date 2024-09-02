@@ -1,104 +1,49 @@
-/* Estilos generales del cuerpo del documento */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Outfit', sans-serif; /* Define la fuente para todo el texto */
-    font-size: 15px; /* Tamaño de fuente base */
-    background-color: hsl(212, 45%, 89%); /* Color de fondo del cuerpo */
-    display: flex; /* Usa flexbox para centrar el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Altura del cuerpo igual a la altura de la ventana */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 10px; /* Agrega un pequeño padding alrededor del contenido */
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilos del contenedor principal */
 .container {
-    display: flex; /* Usa flexbox para el contenedor */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Centra el contenido horizontalmente */
-    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
-    max-width: 400px; /* Ancho máximo del contenedor */
-    padding: 20px; /* Padding interno del contenedor */
-    background-color: hsl(0, 0%, 100%); /* Color de fondo blanco */
-    border-radius: 10px; /* Bordes redondeados del contenedor */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos del contenedor de la imagen */
-.img {
-    width: 90%; /* La imagen ocupa el 90% del ancho del contenedor */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
-    border-radius: 10px; /* Bordes redondeados del contenedor de la imagen */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+img.img-qr {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
 }
 
-/* Estilos para la imagen dentro del contenedor */
-.img img {
-    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor de imagen */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
+h1,
+p{
+    color: hsl(218, 44%, 22%);
 }
 
-/* Estilos para el título principal */
 h1 {
-    color: hsl(218, 44%, 22%); /* Color del texto del título */
-    font-size: 22px; /* Tamaño de fuente del título */
-    font-weight: 700; /* Peso de fuente del título */
-    margin-bottom: 15px; /* Espacio debajo del título */
-    text-align: center; /* Centra el texto del título */
+    margin-bottom: 7px;
+
 }
 
-/* Estilos para el párrafo */
 p {
-    color: hsl(216, 15%, 48%); /* Color del texto del párrafo */
-    font-size: 16px; /* Tamaño de fuente del párrafo */
-    font-weight: 400; /* Peso de fuente del párrafo */
-    margin-bottom: 0; /* Sin margen debajo del párrafo */
-    text-align: center; /* Centra el texto del párrafo */
-    letter-spacing: 0.01em; /* Espaciado entre letras */
-}
+    padding: 10px;
 
-/* Media queries para diseño responsive */
-@media (min-width: 768px) {
-    .container {
-        max-width: 350px; /* Ajusta el ancho máximo en pantallas medianas */
-        padding: 30px; /* Aumenta el padding interno */
-    }
-
-    .img {
-        width: 90%; /* Mantiene el ancho de la imagen como el 90% del contenedor */
-    }
-
-    h1 {
-        font-size: 24px; /* Aumenta el tamaño de fuente del título */
-    }
-
-    p {
-        font-size: 18px; /* Aumenta el tamaño de fuente del párrafo */
-    }
-}
-
-@media (min-width: 1440px) {
-    body {
-        padding: 20px; /* Aumenta el padding del cuerpo */
-    }
-
-    .container {
-        max-width: 400px; /* Ajusta el ancho máximo en pantallas grandes */
-        padding: 40px; /* Aumenta el padding interno */
-    }
-
-    .img {
-        width: 90%; /* Mantiene el ancho de la imagen como el 90% del contenedor */
-    }
-
-    h1 {
-        font-size: 26px; /* Aumenta el tamaño de fuente del título */
-    }
-
-    p {
-        font-size: 20px; /* Aumenta el tamaño de fuente del párrafo */
-    }
 }
